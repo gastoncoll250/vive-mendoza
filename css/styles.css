@@ -1,0 +1,206 @@
+*{
+    margin: 0px; /* MARGEN EXTERNO */
+    padding: 0px; /* MARGEN INTERNO */
+}/* RESETEO CSS */
+
+nav{
+    padding: 0px 30px;
+}
+
+header{
+    top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ed6509;
+    font-family: 'Fredoka One', cursive;    
+    color:#083b66;
+    font-size: 16px;
+}
+
+.header__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 16px;
+    width: 100vw;
+}
+
+.header__logo{
+    justify-content: flex-start;
+    width: 60px;
+    height: 60px;
+}
+
+.header__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    list-style: none;/* la propiedad hace que haya un punto otro elemento o nada frente a la viñeta */
+    padding: 0 16px;
+}
+
+.header__item {
+    padding: 20px;
+}
+
+.header__item a{
+    color: #083b66;
+    text-decoration: none;
+}
+
+main{
+    display: flex;/* MAIN SE VUELVE AUTOMATIAMENTE PADRE DECLARANDO DISPLAY: FLEX (POR DEFECTO SIEMPRE VA A TENER LA PROP DIRECTION ROW) */
+    flex-wrap: wrap;
+    width: 100vw; /* VIEW WIDTH */
+}
+
+h1{
+    font-family: 'Fredoka One', cursive;   
+    color:#083b66;
+    font-size: 25px;
+    padding: 0px 16px;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Fredoka One', cursive;   
+    color:#083b66;
+    font-size: 20px;
+    padding: 0px 16px;
+    text-align: center
+}
+
+p{
+
+}
+.principal{
+    padding: px 16px;
+}
+
+.principal__titulo{
+    font-family: 'Fredoka One', cursive;   
+    color:#083b66;
+    font-size: 25px;
+    padding: 0px 16px;
+}
+
+.principal__subtitulo{
+    font-family: 'Fredoka One', cursive;
+    color:#083b66;
+    font-size: 20px;
+    padding: 0px 16px;
+
+}
+
+.principal__parrafo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0px 16px;
+}
+
+.principal__span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0px 16px
+}
+
+.principal__img{
+    width: 300px;
+    height: 300px;
+    padding: 0px 16px;
+}
+
+div{
+    font-size: 16px;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: darkolivegreen;
+    margin: 10px;
+    padding: 10px;
+}
+
+.galeria__img {
+    width: 300px ;
+    height: 300px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px;
+}
+
+.galeria__principal{
+    width: 300px ;
+    height: 300px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px;
+}
+
+.lugares__img{
+    width: 300px ;
+    height: 300px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px
+}
+
+.form__nombre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 16px;
+}
+
+.form__email{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 16px;
+}
+
+.form__textarea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 16px;
+}
+
+.form__envio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 16px;/* 0px 16px minimo permitido para separar de los bordes */
+}
+
+.ubicacion{
+    padding: 0 16px;
+}
+
+.ubicacion__mapa{
+    padding: 0 16px;
+}
+
+.footer__fondo {
+    background-color: #ed6509;
+    padding: 0 16px;
+}
+
+.footer__derechos{
+    padding: 0 16px;
+}
+
+/* media querie celular 
+99.9% SIEMPRE DEBE HABER UNA SOLA COLUMNA
+0.1% son galerias cuadriculadas que pueden tener hasta 3 columnas*/
+@media (min-width: 320px) and (max-width: 575px) {
+    
+}
+
+/* media querie tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+    
+}
+
+/* VIEWPORT WIDTH HEIGTH
+VIEWPORT WIDTH -> 100VW
+VIEWPORT HEIGTH -> 100VH */
