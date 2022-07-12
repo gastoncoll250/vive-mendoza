@@ -131,10 +131,81 @@ div{
 }
 
 .galeria__principal{
+    display: grid;
+    grid-template-areas:"aconcagua alta_montana cacheuta"
+                        "aconcagua barricas cacheuta"
+                        "bodega cristo_redentor carpa_aconcagua"
+                        "parque_otono cristo_redentor pista_sky"
+                        "portones2 pincheira puente_del_inca"
+                        "portones2 valle_grande puente_del_inca"
+                        "vinedos villavicencio vinedos_montana";
     width: 300px ;
     height: 300px;
     margin: 10px 0px 10px 0px;
     padding: 10px 0px;
+}
+
+.aconcagua {
+    grid-area: aconcagua;
+}
+
+.alta_montana {
+    grid-area: alta_montana;
+}
+
+.cacheuta {
+    grid-area: cacheuta;
+}
+
+.barricas {
+    grid-area: barricas;
+}
+
+.bodega {
+    grid-area: bodega;
+}
+
+.cristo_redentor {
+    grid-area: cristo_redentor;
+}
+
+.carpa_aconcagua {
+    grid-area: carpa_aconcagua;
+}
+.parque_otono {
+    grid-area: parque_otono;
+}
+
+.pista_sky {
+    grid-area: pista_sky;
+}
+
+.portones2 {
+    grid-area: portones2;
+}
+
+.pincheira {
+    grid-area: pincheira;
+}
+
+.puente_del_inca {
+    grid-area: puente_del_inca;
+}
+
+.valle_grande {
+    grid-area: valle_grande;
+}
+
+.vinedos {
+    grid-area: vinedos;
+}
+
+.villavicencio {
+    grid-area: villavicencio;
+}
+
+.vinedos_montana {
+    grid-area: vinedos_montana;
 }
 
 .lugares__img{
@@ -178,6 +249,8 @@ div{
 
 .ubicacion__mapa{
     padding: 0 16px;
+    width: 300px;
+    height: 300px;
 }
 
 .footer__fondo {
