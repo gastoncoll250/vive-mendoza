@@ -1,5 +1,5 @@
 <h1>Vive Mendoza - Proyecto Coderhouse</h1>
-<p>Esta pagina es una idea de lo que se puede ver en mendoza</p>
+<p>Esta sitio es una idea de lo que se puede ver y hacer en Mendoza</p>
 
 <h2>Tecnologias usadas</h2>
 <ul>
