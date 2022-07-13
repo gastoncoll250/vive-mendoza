@@ -117,7 +117,7 @@ div{
     font-size: 16px;
 }
 
-.galeria{
+.galeria__index{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -133,8 +133,12 @@ div{
     padding: 10px 0px;
 }
 
-.galeria__principal{
+.galeria__grid {
     display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr ; /* unidad grid: fr 1/3*/
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:"aconcagua alta_montana cacheuta"
                         "aconcagua barricas cacheuta"
                         "bodega cristo_redentor carpa_aconcagua"
@@ -142,73 +146,135 @@ div{
                         "portones2 pincheira puente_del_inca"
                         "portones2 valle_grande puente_del_inca"
                         "vinedos villavicencio vinedos_montana";
-    width: 300px ;
-    height: 300px;
-    margin: 10px 0px 10px 0px;
-    padding: 10px 0px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .aconcagua {
     grid-area: aconcagua;
+    background-image: url('../resources/aconcagua.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .alta_montana {
     grid-area: alta_montana;
+    background-image: url('../resources/alta_montana.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .cacheuta {
     grid-area: cacheuta;
+    background-image: url('../resources/cacheuta.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .barricas {
     grid-area: barricas;
+    background-image: url('../resources/barricas.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bodega {
     grid-area: bodega;
+    background-image: url('../resources/bodega.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .cristo_redentor {
     grid-area: cristo_redentor;
+    background-image: url('../resources/cristo_redentor.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .carpa_aconcagua {
     grid-area: carpa_aconcagua;
+    background-image: url('../resources/carpa_aconcagua.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .parque_otono {
     grid-area: parque_otono;
+    background-image: url('../resources/parque_otono.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .pista_sky {
     grid-area: pista_sky;
+    background-image: url('../resources/pista_sky.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .portones2 {
     grid-area: portones2;
+    background-image: url('../resources/portones2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .pincheira {
     grid-area: pincheira;
+    background-image: url('../resources/pincheira.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .puente_del_inca {
     grid-area: puente_del_inca;
+    background-image: url('../resources/puente_del_inca.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .valle_grande {
     grid-area: valle_grande;
+    background-image: url('../resources/valle_grande.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .vinedos {
     grid-area: vinedos;
+    background-image: url('../resources/vinedos.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .villavicencio {
     grid-area: villavicencio;
+    background-image: url('../resources/villavicencio.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .vinedos_montana {
     grid-area: vinedos_montana;
+    background-image: url('../resources/vinedos_montana.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .lugares__img{
