@@ -52,6 +52,7 @@ main{
     display: flex;/* MAIN SE VUELVE AUTOMATIAMENTE PADRE DECLARANDO DISPLAY: FLEX (POR DEFECTO SIEMPRE VA A TENER LA PROP DIRECTION ROW) */
     flex-wrap: wrap;
     width: 100vw; /* VIEW WIDTH */
+    padding: 10px;
 }
 
 h1{
@@ -85,6 +86,15 @@ p{
     color:#083b66;
     font-size: 25px;
     padding: 0px 16px;
+}
+
+.principal__titulo--galeria{
+    font-family: 'Fredoka One', cursive;   
+    color:#083b66;
+    font-size: 25px;
+    padding: 0px 16px;
+    margin-left: 580px;
+
 }
 
 .principal__subtitulo{
@@ -139,23 +149,16 @@ div{
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr ; /* unidad grid: fr 1/3*/
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:"aconcagua alta_montana cacheuta"
-                        "aconcagua barricas cacheuta"
-                        "bodega cristo_redentor carpa_aconcagua"
-                        "parque_otono cristo_redentor pista_sky"
-                        "portones2 pincheira puente_del_inca"
-                        "portones2 valle_grande puente_del_inca"
-                        "vinedos villavicencio vinedos_montana";
+    grid-template-areas:"alta_montana cacheuta bodega"
+                        "alta_montana cacheuta bodega"
+                        "alta_montana cristo_redentor carpa_aconcagua"
+                        "parque_otono cristo_redentor carpa_aconcagua"
+                        "parque_otono vinedos_montana puente_del_inca"
+                        "valle_grande vinedos_montana puente_del_inca"
+                        "valle_grande vinedos_montana puente_del_inca";
     column-gap: 10px;
     row-gap: 10px;
-}
-
-.aconcagua {
-    grid-area: aconcagua;
-    background-image: url('../resources/aconcagua.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(112, 56, 117);
 }
 
 .alta_montana {
@@ -169,14 +172,6 @@ div{
 .cacheuta {
     grid-area: cacheuta;
     background-image: url('../resources/cacheuta.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.barricas {
-    grid-area: barricas;
-    background-image: url('../resources/barricas.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -213,30 +208,6 @@ div{
     background-repeat: no-repeat;
 }
 
-.pista_sky {
-    grid-area: pista_sky;
-    background-image: url('../resources/pista_sky.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.portones2 {
-    grid-area: portones2;
-    background-image: url('../resources/portones2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.pincheira {
-    grid-area: pincheira;
-    background-image: url('../resources/pincheira.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .puente_del_inca {
     grid-area: puente_del_inca;
     background-image: url('../resources/puente_del_inca.jpg');
@@ -248,22 +219,6 @@ div{
 .valle_grande {
     grid-area: valle_grande;
     background-image: url('../resources/valle_grande.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.vinedos {
-    grid-area: vinedos;
-    background-image: url('../resources/vinedos.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.villavicencio {
-    grid-area: villavicencio;
-    background-image: url('../resources/villavicencio.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
