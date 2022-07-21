@@ -48,13 +48,47 @@
           </nav>
     </header>
     <main>
-        <h1 class="principal__titulo">LUGARES DE INTERES</h1>
-        <section class="lugares__grid">
-            <img class="lugares__img" src="../resources/alta montaña.jpg" alt="">
+        <h1 class="lugares__titulo">LUGARES DE INTERES</h1>
+        <section class="lugares__grid carousel__size">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../resources/aconcagua.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../resources/bodega.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../resources/cristo_redentor.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../resources/puente_del_inca.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../resources/pista_sky.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+            <!-- <img class="lugares__img" src="../resources/alta montaña.jpg" alt="">
             <img class="lugares__img" src="../resources/bodega.jpg" alt="">
             <img class="lugares__img" src="../resources/puente del inca.jpg" alt="">
             <img class="lugares__img" src="../resources/cristo redentor.jpg" alt="">
-            <img class="lugares__img" src="../resources/valle grande.jpg" alt="">
+            <img class="lugares__img" src="../resources/valle grande.jpg" alt=""> -->
         </section>
     </main>
     <footer class="footer__fondo"><!-- pie de pagina. quien creo la pagina. sigueme en las redes etc. menor relevancia -->
