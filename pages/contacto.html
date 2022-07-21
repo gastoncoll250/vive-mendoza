@@ -17,40 +17,38 @@
 </head>    
 <body>
     <header><!-- encabezado barra de navegacion y logo -->
-        <nav class="header__nav">
-            <img class="header__logo" src="../resources/Vive_Mendoza.png" alt="Logo de la página">
-            <ul class="header__lista">
-                <li class="header__item"><a href="../index.html">Inicio</a></li>
-                <li class="header__item"><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li class="header__item"><a href="../pages/galeria.html">Galeria</a></li>
-                <li class="header__item"><a href="../pages/lugares-de-interes.html">Lugares de Interes</a></li>
-                <li class="header__item"><a href="#">Contacto</a></li>
-            </ul><!-- NAVEGACION/MENU -->
-        </nav>
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="../resources/favicon.ico" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="lugares-de-interes.html">Lugares de interes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
-        <h1 class="principal__titulo">CONTACTO</h1>
-        <img class="header__logo" src="../resources/Vive_Mendoza.png" alt="logo de la pagina">
-        <form method="post">
-            <div class="form__nombre">
-                <label for="Nombre">Nombre</label><!-- Muestra la palabra antes del input -->
-                <input name="Nombre" type="text"><!-- obtiene nombre de usurio enn una sola linea -->
-            </div>
-            <div class="form__email">
-                <label for="Email">Email</label>
-                <input name="Email" type="text"><!-- solicito mail a usuario para contacto -->
-            </div>
-            <div class="form__textarea">
-                <label for="Consulta">Consulta/Comentario</label>
-                <textarea name="Consulta" id="" cols="30" rows="10"></textarea><!-- consulta del usuario -->
-            </div>
-            <div class="form_envio">
-                <input type="submit" value="Enviar formulario">
-                <input type="reset" value="Borrar formulario">
-                <input type="button" value="Derp">
-            </div>
-        </form>
-            <h2>  </h2>
+
     </main>
     <footer class="footer__fondo"><!-- pie de pagina. quien creo la pagina. sigueme en las redes etc. menor relevancia -->
         <img class src="" alt="">
